@@ -14,7 +14,7 @@ const Team = () => {
     {
       name: "Higor",
       role: "Developer and Designer",
-      bio: "Skilled in multiple languages, specializing in creating complex algorithms and systems for our projects. More at higor.dev",
+      bio: "Skilled in multiple languages, specializing in creating complex algorithms and systems for our projects.",
       image: "https://github.com/higorwilvert.png",
     },
     {

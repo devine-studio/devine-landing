@@ -6,22 +6,22 @@ import Vini from "../assets/people/vini.png";
 const Team = () => {
   const team = [
     {
-      name: "João",
+      name: "Jn (João)",
       role: "Developer and Designer",
-      bio: "Passionate about brand design and front-end development, helping create beautiful user experiences with Next.js and Supabase.",
-      image: Joao,
+      bio: "Passionate about brand design and front-end development, helping create beautiful user experiences with all sorts of technologies. More at jn-dev.com",
+      image: "https://github.com/jnzinho.png",
     },
     {
       name: "Higor",
       role: "Developer and Designer",
-      bio: "Skilled in multiplelanguages, specializing in creating complex algorithms and systems for our projects.",
-      image: Higor,
+      bio: "Skilled in multiple languages, specializing in creating complex algorithms and systems for our projects. More at higor.dev",
+      image: "https://github.com/higorwilvert.png",
     },
     {
       name: "Vini",
       role: "Developer and Designer",
       bio: "Passionate about creating impactful projects that help people, bringing ideas to life using Next.js and modern web technologies.",
-      image: Vini,
+      image: "https://github.com/lemesvini.png",
     },
   ];
 

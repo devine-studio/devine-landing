@@ -1,36 +1,37 @@
-import { motion } from "framer-motion";
-import { useRef } from "react";
-import Orion from "../assets/orion.png";
-import Ontheclue from "../assets/ontheclue.png";
-import Theme from "../assets/theme.png";
+import { motion } from 'framer-motion';
+import { useRef } from 'react';
+import Devito from '../assets/devito.jpeg';
+import Orion from '../assets/orion.png';
+import Theme from '../assets/theme.png';
 const Projects = () => {
   const projectsRef = useRef(null);
 
   const projects = [
     {
-      title: "Orion - Finance Tracker",
+      title: 'JVLDS Theme',
       description:
-        "A finance tracker app. It allows users to track their income and expenses, and get insights into their spending habits.",
-      tags: ["Loveable", "Next.js", "Supabase"],
-      image: Orion,
-      github: "https://github.com/devine-studio/orion-finance-tracker",
-    },
-    {
-      title: "JVLDS Theme",
-      description:
-        "A theme for Vscode. It is a soothing, calming pastel theme with a dark and light variant.",
-      tags: ["Vscode", "Theme", "CSS"],
+        'A theme for Vscode. It is a soothing, calming pastel theme with a dark and light variant.',
+      tags: ['Vscode', 'Theme', 'CSS'],
       image: Theme,
-      github: "https://github.com/devine-studio/jvlds-theme",
+      github: 'https://github.com/devine-studio/jvlds-theme'
     },
     {
-      title: "On the clue",
+      title: 'Orion - Finance Tracker',
       description:
-        "A free browser game. It is a simple game where you have to guess the correct word combination before the time runs out.",
-      tags: ["Game", "Next.js", "Supabase"],
-      image: Ontheclue,
-      github: "https://github.com/devine-studio/ontheclue",
+        'A finance tracker app. It allows users to track their income and expenses, and get insights into their spending habits.',
+      tags: ['Loveable', 'Next.js', 'Supabase'],
+      image: Orion,
+      github: 'https://github.com/devine-studio/orion-finance-tracker'
     },
+    {
+      title: 'Devito',
+      description:
+        'A free browser game. It is a simple cooperative game where you have to work together to order cards in the correct order.',
+      tags: ['Game', 'TypeScript'],
+      image: Devito,
+      github: 'https://playdevito.netlify.app',
+      buttonText: 'Play Now'
+    }
   ];
 
   const containerVariants = {
@@ -38,14 +39,14 @@ const Projects = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2,
-      },
-    },
+        staggerChildren: 0.2
+      }
+    }
   };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
   };
 
   return (
@@ -69,8 +70,9 @@ const Projects = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Exploring the intersection of AI, Next.js, and Supabase to create
-            impactful open source tools.
+            Our projects are built with the latest and greatest technologies.
+            Sometimes we build fun projects for fun, sometimes we build them to
+            help people, and sometimes we build them to learn new things.
           </motion.p>
         </div>
 
@@ -136,7 +138,7 @@ const Projects = () => {
                     <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
                     <path d="M9 18c-4.51 2-5-2-7-2"></path>
                   </svg>
-                  View on GitHub
+                  {project.buttonText || 'View on GitHub'}
                 </a>
               </div>
             </motion.div>

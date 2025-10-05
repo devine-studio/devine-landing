@@ -1,28 +1,25 @@
-import { motion } from "framer-motion";
-import Joao from "../assets/people/joao.png";
-import Higor from "../assets/people/higor.png";
-import Vini from "../assets/people/vini.png";
+import { motion } from 'framer-motion';
 
 const Team = () => {
   const team = [
     {
-      name: "Jn (João)",
-      role: "Developer and Designer",
-      bio: "Passionate about brand design and front-end development, helping create beautiful user experiences with all sorts of technologies. More at jn-dev.com",
-      image: "https://github.com/jnzinho.png",
+      name: 'Jn (João)',
+      role: 'Developer and Designer',
+      bio: 'Passionate about brand design and front-end development, helping create beautiful user experiences with all sorts of technologies. More at jn-dev.com',
+      image: 'https://github.com/jnzinho.png'
     },
     {
-      name: "Higor",
-      role: "Developer and Designer",
-      bio: "Skilled in multiple languages, specializing in creating complex algorithms and systems for our projects.",
-      image: "https://github.com/higorwilvert.png",
+      name: 'Higor',
+      role: 'Developer and Designer',
+      bio: 'Skilled in multiple languages, specializing in creating complex algorithms and systems for our projects.',
+      image: 'https://github.com/higorwilvert.png'
     },
     {
-      name: "Vini",
-      role: "Developer and Designer",
-      bio: "Passionate about creating impactful projects that help people, bringing ideas to life using Next.js and modern web technologies.",
-      image: "https://github.com/lemesvini.png",
-    },
+      name: 'Vini',
+      role: 'Developer and Designer',
+      bio: 'Passionate about creating impactful projects that help people, bringing ideas to life using Next.js and modern web technologies.',
+      image: 'https://github.com/lemesvini.png'
+    }
   ];
 
   const containerVariants = {
@@ -30,14 +27,14 @@ const Team = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2,
-      },
-    },
+        staggerChildren: 0.2
+      }
+    }
   };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
   };
 
   return (
@@ -61,7 +58,7 @@ const Team = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            The friends behind Devine, building innovative open source solutions
+            The friends behind Devine, building fun solutions and projects
             together.
           </motion.p>
         </div>

@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import devinelogo from "../assets/devine-white.png";
+import { motion } from 'framer-motion';
+import devinelogo from '../assets/devine-white.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -81,7 +81,7 @@ const Footer = () => {
           >
             <p>© {currentYear} Devine. All rights reserved.</p>
             <p className="mt-1">
-              Open source collective by João, Higor, and Vini.
+              Design-first development studio by João, Higor, and Vini.
             </p>
           </motion.div>
         </div>

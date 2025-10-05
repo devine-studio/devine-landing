@@ -1,0 +1,84 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "team": "Team",
+    "projects": "Projects",
+    "github": "GitHub"
+  },
+  "hero": {
+    "title": "Design-first development",
+    "studio": "studio",
+    "subtitle": "We craft stunning visuals and user-friendly experiences that help your brand stand out and connect with your audience."
+  },
+  "about": {
+    "title": "About devine",
+    "description": "We're João, Higor, and Vini. three friends passionate about development and design, we're building innovative tools for the community.",
+    "designFirst": {
+      "title": "Design-First Approach",
+      "description": "We LOVE design at devine, we believe that design is the first step to a great product. We want to create beautiful and functional products that are easy to use and understand."
+    },
+    "aiPowered": {
+      "title": "AI-Powered",
+      "description": "We leverage artificial intelligence to create innovative solutions and enhance user experiences."
+    },
+    "bleedingEdge": {
+      "title": "Bleeding Edge",
+      "description": "We really like to use the latest and greatest technologies to build our projects. Its fun for us to learn new things and build cool stuff with it."
+    },
+    "communityDriven": {
+      "title": "Community Driven",
+      "description": "We believe in the power of community and welcome contributions from developers worldwide to our open source projects."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "Three friends coding together in our free time, building fun projects and learning new technologies along the way."
+    }
+  },
+  "team": {
+    "title": "Meet The Team",
+    "subtitle": "The friends behind Devine, building fun solutions and projects together.",
+    "members": {
+      "jn": {
+        "name": "Jn (João)",
+        "role": "Developer and Designer",
+        "bio": "Passionate about brand design and front-end development, helping create beautiful user experiences with all sorts of technologies. More at jn-dev.com"
+      },
+      "higor": {
+        "name": "Higor",
+        "role": "Developer and Designer",
+        "bio": "Skilled in multiple languages, specializing in creating complex algorithms and systems for our projects."
+      },
+      "vini": {
+        "name": "Vini",
+        "role": "Developer and Designer",
+        "bio": "Passionate about creating impactful projects that help people, bringing ideas to life using Next.js and modern web technologies."
+      }
+    }
+  },
+  "projects": {
+    "title": "Our Projects",
+    "subtitle": "Our projects are built with the latest and greatest technologies. Sometimes we build fun projects for fun, sometimes we build them to help people, and sometimes we build them to learn new things.",
+    "viewAllGithub": "View All Projects on GitHub",
+    "viewOnGithub": "View on GitHub",
+    "playNow": "Play Now",
+    "items": {
+      "theme": {
+        "title": "JVLDS Theme",
+        "description": "A theme for Vscode. It is a soothing, calming pastel theme with a dark and light variant."
+      },
+      "orion": {
+        "title": "Orion - Finance Tracker",
+        "description": "A finance tracker app. It allows users to track their income and expenses, and get insights into their spending habits."
+      },
+      "devito": {
+        "title": "Devito",
+        "description": "A free browser game. It is a simple cooperative game where you have to work together to order cards in the correct order."
+      }
+    }
+  },
+  "footer": {
+    "rights": "Devine. All rights reserved.",
+    "tagline": "Design-first development studio by João, Higor, and Vini."
+  }
+}

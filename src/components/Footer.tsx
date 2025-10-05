@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import devinelogo from '../assets/devine-white.png';
 
 const Footer = () => {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
 
   return (
@@ -79,10 +81,10 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <p>© {currentYear} Devine. All rights reserved.</p>
-            <p className="mt-1">
-              Design-first development studio by João, Higor, and Vini.
+            <p>
+              © {currentYear} {t('footer.rights')}
             </p>
+            <p className="mt-1">{t('footer.tagline')}</p>
           </motion.div>
         </div>
       </div>

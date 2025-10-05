@@ -1,0 +1,84 @@
+{
+  "navbar": {
+    "home": "Início",
+    "about": "Sobre",
+    "team": "Equipe",
+    "projects": "Projetos",
+    "github": "GitHub"
+  },
+  "hero": {
+    "title": "Estúdio de desenvolvimento",
+    "studio": "e design",
+    "subtitle": "Criamos visuais impressionantes e experiências amigáveis que ajudam sua marca a se destacar e conectar com seu público."
+  },
+  "about": {
+    "title": "Sobre a devine",
+    "description": "Somos João, Higor e Vini. três amigos apaixonados por desenvolvimento e design, construindo ferramentas inovadoras para a comunidade.",
+    "designFirst": {
+      "title": "Abordagem Design-First",
+      "description": "AMAMOS design na devine, acreditamos que o design é o primeiro passo para um ótimo produto. Queremos criar produtos bonitos e funcionais que sejam fáceis de usar e entender."
+    },
+    "aiPowered": {
+      "title": "Impulsionado por IA",
+      "description": "Aproveitamos a inteligência artificial para criar soluções inovadoras e aprimorar experiências de usuário."
+    },
+    "bleedingEdge": {
+      "title": "Tecnologia de Ponta",
+      "description": "Adoramos usar as tecnologias mais recentes e avançadas para construir nossos projetos. É divertido para nós aprender coisas novas e criar coisas legais com elas."
+    },
+    "communityDriven": {
+      "title": "Orientado pela Comunidade",
+      "description": "Acreditamos no poder da comunidade e recebemos contribuições de desenvolvedores do mundo todo para nossos projetos de código aberto."
+    },
+    "mission": {
+      "title": "Nossa Missão",
+      "description": "Três amigos programando juntos em nosso tempo livre, construindo projetos divertidos e aprendendo novas tecnologias pelo caminho."
+    }
+  },
+  "team": {
+    "title": "Conheça o Time",
+    "subtitle": "Os amigos por trás da Devine, construindo soluções e projetos divertidos juntos.",
+    "members": {
+      "jn": {
+        "name": "Jn (João)",
+        "role": "Desenvolvedor e Designer",
+        "bio": "Apaixonado por design de marca e desenvolvimento front-end, ajudando a criar experiências de usuário bonitas com todos os tipos de tecnologias. Mais em jn-dev.com"
+      },
+      "higor": {
+        "name": "Higor",
+        "role": "Desenvolvedor e Designer",
+        "bio": "Habilidoso em múltiplas linguagens, especializado em criar algoritmos e sistemas complexos para nossos projetos."
+      },
+      "vini": {
+        "name": "Vini",
+        "role": "Desenvolvedor e Designer",
+        "bio": "Apaixonado por criar projetos impactantes que ajudam as pessoas, dando vida às ideias usando Next.js e tecnologias web modernas."
+      }
+    }
+  },
+  "projects": {
+    "title": "Nossos Projetos",
+    "subtitle": "Nossos projetos são construídos com as tecnologias mais recentes e avançadas. Às vezes construímos projetos divertidos por diversão, às vezes os construímos para ajudar as pessoas, e às vezes os construímos para aprender coisas novas.",
+    "viewAllGithub": "Ver Todos os Projetos no GitHub",
+    "viewOnGithub": "Ver no GitHub",
+    "playNow": "Jogar Agora",
+    "items": {
+      "theme": {
+        "title": "JVLDS Theme",
+        "description": "Um tema para Vscode. É um tema pastel suave e calmante com variantes escura e clara."
+      },
+      "orion": {
+        "title": "Orion - Rastreador de Finanças",
+        "description": "Um aplicativo de rastreamento de finanças. Permite aos usuários rastrear sua renda e despesas, e obter insights sobre seus hábitos de gastos."
+      },
+      "devito": {
+        "title": "Devito",
+        "description": "Um jogo de navegador gratuito. É um jogo cooperativo simples onde você tem que trabalhar em conjunto para ordenar cartas na ordem correta."
+      }
+    }
+  },
+  "footer": {
+    "rights": "Devine. Todos os direitos reservados.",
+    "tagline": "Estúdio de desenvolvimento design-first por João, Higor e Vini."
+  }
+}

@@ -1,23 +1,26 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const Team = () => {
+  const { t } = useTranslation();
+
   const team = [
     {
-      name: 'Jn (João)',
-      role: 'Developer and Designer',
-      bio: 'Passionate about brand design and front-end development, helping create beautiful user experiences with all sorts of technologies. More at jn-dev.com',
+      nameKey: 'team.members.jn.name',
+      roleKey: 'team.members.jn.role',
+      bioKey: 'team.members.jn.bio',
       image: 'https://github.com/jnzinho.png'
     },
     {
-      name: 'Higor',
-      role: 'Developer and Designer',
-      bio: 'Skilled in multiple languages, specializing in creating complex algorithms and systems for our projects.',
+      nameKey: 'team.members.higor.name',
+      roleKey: 'team.members.higor.role',
+      bioKey: 'team.members.higor.bio',
       image: 'https://github.com/higorwilvert.png'
     },
     {
-      name: 'Vini',
-      role: 'Developer and Designer',
-      bio: 'Passionate about creating impactful projects that help people, bringing ideas to life using Next.js and modern web technologies.',
+      nameKey: 'team.members.vini.name',
+      roleKey: 'team.members.vini.role',
+      bioKey: 'team.members.vini.bio',
       image: 'https://github.com/lemesvini.png'
     }
   ];
@@ -48,7 +51,7 @@ const Team = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            Meet The Team
+            {t('team.title')}
           </motion.h2>
 
           <motion.p
@@ -58,8 +61,7 @@ const Team = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            The friends behind Devine, building fun solutions and projects
-            together.
+            {t('team.subtitle')}
           </motion.p>
         </div>
 
@@ -84,15 +86,15 @@ const Team = () => {
               >
                 <img
                   src={member.image}
-                  alt={member.name}
+                  alt={t(member.nameKey)}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </motion.div>
 
               <div className="p-6">
-                <h3 className="text-xl font-bold">{member.name}</h3>
-                <p className="text-primary/80 mb-3">{member.role}</p>
-                <p className="text-muted-foreground">{member.bio}</p>
+                <h3 className="text-xl font-bold">{t(member.nameKey)}</h3>
+                <p className="text-primary/80 mb-3">{t(member.roleKey)}</p>
+                <p className="text-muted-foreground">{t(member.bioKey)}</p>
               </div>
             </motion.div>
           ))}

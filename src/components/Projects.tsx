@@ -1,36 +1,36 @@
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import Devito from '../assets/devito.jpeg';
 import Orion from '../assets/orion.png';
 import Theme from '../assets/theme.png';
+
 const Projects = () => {
+  const { t } = useTranslation();
   const projectsRef = useRef(null);
 
   const projects = [
     {
-      title: 'JVLDS Theme',
-      description:
-        'A theme for Vscode. It is a soothing, calming pastel theme with a dark and light variant.',
+      titleKey: 'projects.items.theme.title',
+      descriptionKey: 'projects.items.theme.description',
       tags: ['Vscode', 'Theme', 'CSS'],
       image: Theme,
       github: 'https://github.com/devine-studio/jvlds-theme'
     },
     {
-      title: 'Orion - Finance Tracker',
-      description:
-        'A finance tracker app. It allows users to track their income and expenses, and get insights into their spending habits.',
+      titleKey: 'projects.items.orion.title',
+      descriptionKey: 'projects.items.orion.description',
       tags: ['Loveable', 'Next.js', 'Supabase'],
       image: Orion,
       github: 'https://github.com/devine-studio/orion-finance-tracker'
     },
     {
-      title: 'Devito',
-      description:
-        'A free browser game. It is a simple cooperative game where you have to work together to order cards in the correct order.',
+      titleKey: 'projects.items.devito.title',
+      descriptionKey: 'projects.items.devito.description',
       tags: ['Game', 'TypeScript'],
       image: Devito,
       github: 'https://playdevito.netlify.app',
-      buttonText: 'Play Now'
+      buttonTextKey: 'projects.playNow'
     }
   ];
 
@@ -60,7 +60,7 @@ const Projects = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            Our Projects
+            {t('projects.title')}
           </motion.h2>
 
           <motion.p
@@ -70,9 +70,7 @@ const Projects = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Our projects are built with the latest and greatest technologies.
-            Sometimes we build fun projects for fun, sometimes we build them to
-            help people, and sometimes we build them to learn new things.
+            {t('projects.subtitle')}
           </motion.p>
         </div>
 
@@ -94,17 +92,17 @@ const Projects = () => {
               <div className="h-48 overflow-hidden rounded-t-xl">
                 <img
                   src={project.image}
-                  alt={project.title}
+                  alt={t(project.titleKey)}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
 
               <div className="p-6 flex flex-col flex-grow bg-black/40">
                 <h3 className="text-xl font-bold mb-2 text-white">
-                  {project.title}
+                  {t(project.titleKey)}
                 </h3>
                 <p className="text-white/90 mb-4 flex-grow">
-                  {project.description}
+                  {t(project.descriptionKey)}
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -138,7 +136,9 @@ const Projects = () => {
                     <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
                     <path d="M9 18c-4.51 2-5-2-7-2"></path>
                   </svg>
-                  {project.buttonText || 'View on GitHub'}
+                  {project.buttonTextKey
+                    ? t(project.buttonTextKey)
+                    : t('projects.viewOnGithub')}
                 </a>
               </div>
             </motion.div>
@@ -172,7 +172,7 @@ const Projects = () => {
               <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
               <path d="M9 18c-4.51 2-5-2-7-2"></path>
             </svg>
-            View All Projects on GitHub
+            {t('projects.viewAllGithub')}
           </a>
         </motion.div>
       </div>

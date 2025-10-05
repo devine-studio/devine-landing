@@ -1,8 +1,10 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import devineicon from '../assets/devineonlylogo.png';
 
 const About = () => {
+  const { t } = useTranslation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
@@ -23,9 +25,8 @@ const About = () => {
 
   const features = [
     {
-      title: 'Design-First Approach',
-      description:
-        'We LOVE design at devine, we believe that design is the first step to a great product. We want to create beautiful and functional products that are easy to use and understand.',
+      title: t('about.designFirst.title'),
+      description: t('about.designFirst.description'),
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -48,9 +49,8 @@ const About = () => {
       )
     },
     {
-      title: 'AI-Powered',
-      description:
-        'We leverage artificial intelligence to create innovative solutions and enhance user experiences.',
+      title: t('about.aiPowered.title'),
+      description: t('about.aiPowered.description'),
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -70,9 +70,8 @@ const About = () => {
       )
     },
     {
-      title: 'Bleeding Edge',
-      description:
-        'We really like to use the latest and greatest technologies to build our projects. Its fun for us to learn new things and build cool stuff with it.',
+      title: t('about.bleedingEdge.title'),
+      description: t('about.bleedingEdge.description'),
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -91,9 +90,8 @@ const About = () => {
       )
     },
     {
-      title: 'Community Driven',
-      description:
-        'We believe in the power of community and welcome contributions from developers worldwide to our open source projects.',
+      title: t('about.communityDriven.title'),
+      description: t('about.communityDriven.description'),
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +124,7 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            About devine
+            {t('about.title')}
             <span className="text-primary">
               <img
                 src={devineicon}
@@ -143,9 +141,7 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            We're João, Higor, and Vini. three friends passionate about
-            development and design, we're building innovative tools for the
-            community.
+            {t('about.description')}
           </motion.p>
         </div>
 
@@ -181,10 +177,11 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h3 className="text-2xl font-bold mb-4 text-center">Our Mission</h3>
+          <h3 className="text-2xl font-bold mb-4 text-center">
+            {t('about.mission.title')}
+          </h3>
           <p className="text-center text-lg">
-            Three friends coding together in our free time, building fun
-            projects and learning new technologies along the way.
+            {t('about.mission.description')}
           </p>
         </motion.div>
       </div>
